@@ -1,0 +1,27 @@
+
+%script{src:'../node_modules/viz.js/viz.js'}
+%script{src:'../node_modules/jquery/dist/jquery.min.js'}
+
+%body
+
+  %h1 simplest digraph ever
+  .simplest-digraph-ever
+
+  %h1 digraph, with records
+  .with-records
+
+%script
+  simplestDG = Viz("digraph g {Users -> Boards}", { format: "png-image-element" })
+  $('.simplest-digraph-ever').append(simplestDG);
+
+  digraph_with_records = Viz(
+  "digraph g {"+
+  "U [shape=record, label=\"{Users||name\nid}\"];"+
+  "B [shape=record, label=\"{Boards|name]id}\"];"+
+  "C [shape=record, label=\"{Cards|name|id}\"];"+
+  "    U -> B[label=many]; "+
+  "   B -> C[label=many]; "+
+  "}",
+  { format: "png-image-element" });
+  $('.with-records').append(digraph_with_records);
+

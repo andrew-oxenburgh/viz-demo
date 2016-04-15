@@ -1,0 +1,17 @@
+{
+  "name": "viz-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mkdir -p ./output && haml haml/demo.haml output/demo.html",
+    "clean": "rm -rf ./output ./node_modules/ ./bower_components"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hamljs": "^0.6.2",
+    "jquery": "^2.2.3",
+    "viz.js": "^1.3.0"
+  }
+}

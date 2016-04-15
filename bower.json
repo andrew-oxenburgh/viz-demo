@@ -1,0 +1,21 @@
+{
+  "name": "viz-demo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "andrew-oxenburgh <andrew.oxenburgh@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/andrew-oxenburgh/faffing",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "viz.js": "^1.3.0",
+    "jquery": "^2.2.3"
+  }
+}
